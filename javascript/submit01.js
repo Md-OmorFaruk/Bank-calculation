@@ -19,4 +19,17 @@ document.getElementById('submit1').addEventListener('click', function () {
       enterDeposit.value = '';
 
 
+
+
+      //Balance changing
+      const prevBalance = document.getElementById('balance-money');
+      const underDeposit1 = prevBalance.innerText;
+
+      //Integer convert 
+      const inConvert = parseFloat(underDeposit1);
+
+      //adding to the balance
+      prevBalance.innerText = makeIn1 + inConvert;
+
+
 });
