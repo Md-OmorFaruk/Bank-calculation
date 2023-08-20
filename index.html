@@ -5,18 +5,88 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Bank Calculation</title>
       <link rel="shortcut icon" href="logo/collaboration.png" type="image/x-icon">
+      <!--Tailwind CSS-->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!--Google Font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+
+      <!--Style-->
+      <style>
+            .font{
+                  font-family: 'Righteous', cursive;
+            }
+      </style>
 </head>
 <body>
       <head>
+            <h1 class="font text-5xl text-center my-10">Functional <span class="text-blue-600">Baap er Bank.</span></h1>
 
       </head>
       <main>
+            <section>
+                  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-3/4 mx-auto mb-7">
+
+                        <!--Deposit-->
+
+                        <div class="bg-gradient-to-r from-blue-900 to-blue-400 p-14">
+                              <h2 class="text-xl text-white font pb-3">Deposit</h2>
+                              <h3 class="text-5xl text-white font p-5">$ <span id="deposit-money">00</span></h3>
+                        </div>
+
+                        <!--Withdraw-->
+
+                        <div class="bg-gradient-to-r from-orange-700 to-orange-400 p-14">
+                              <h2 class="text-xl text-white font pb-3">Withdraw</h2>
+                              <h3 class="text-5xl text-white font p-5 ">$ <span id="withdraw-money">00</span></h3>
+                        </div>
+
+                        <!--Balance-->
+
+
+                        <div class="bg-gradient-to-r from-purple-900 to-purple-400 p-14">
+                              <h2 class="text-xl text-white font pb-3">Balance</h2>
+                              <h3 class="text-5xl text-white font p-5">$ <span id="balnce-money">00</span></h3>
+                        </div>
+                  </div>
+            </section>
+            <section>
+                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-3/4 mx-auto">
+                        <!--Deposit-->
+                        
+                        <div class="bg-gradient-to-r from-pink-700 to-pink-400 p-14">
+                              <h2 class="text-xl text-white font pb-3">Your Deposit</h2>
+
+                              <!--Input type -->
+                              <input class="block mb-3 w-3/4 p-3 rounded-2xl font" placeholder="$Enter Dollar Amount" type="text" name="" id="your-deposit">
+
+                              <!--Button-->
+                              <button class=" bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white font font-medium py-4 px-7 rounded-2xl" id="submit1">Submit</button>
+                        </div>
+                        
+                        <!--Withdraw-->
+                        
+                        
+                        <div class="bg-gradient-to-r from-rose-900 to-pink-400 p-14">
+                              <h2 class="text-xl text-white font pb-3">Your Withdraw</h2>
+
+                              <!--Input type -->
+                              <input class="block mb-3 w-3/4 p-3 rounded-2xl font" placeholder="$Enter Dollar Amount" type="text" name="" id="your-withdraw">
+
+                              <!--Button-->
+                              <button class=" bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white font font-medium py-4 px-7 rounded-2xl" id="submit2">Submit</button>
+                        </div>
+                  </div>
+            </section>
 
       </main>
       <footer>
 
       </footer>
-      <script src="javascript/java.js"></script>
+      <script src="javascript/submit01.js"></script>
+      <script src="javascript/submit02.js"></script>
       
 </body>
 </html>
